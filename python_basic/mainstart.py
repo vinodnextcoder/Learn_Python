@@ -1,16 +1,24 @@
 # Python program to illustrate  
 # function with main 
-def getInteger(): 
-    result = int(input("Enter integer: ")) 
-    return result 
+def pypart(n): 
+      
+    # outer loop to handle number of rows 
+    # n in this case 
+    for i in range(0, n): 
+      
+        # inner loop to handle number of columns 
+        # values changing acc. to outer loop 
+        for j in range(0, i+1): 
+          
+            # printing stars 
+            print("* ",end="") 
+       
+        # ending line after each row 
+        print("\r") 
   
 def Main(): 
     print("Started") 
-  
-    # calling the getInteger function and  
-    # storing its returned value in the output variable 
-    output = getInteger()      
-    print(output) 
+    output = pypart(5)   
   
 # now we are required to tell Python  
 # for 'Main' function existence 
