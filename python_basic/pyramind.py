@@ -1,8 +1,13 @@
 # Python program to illustrate  
 # function with main 
 def getInteger(): 
-    result = int(input("Enter integer: ")) 
-    return result 
+    a=int(input("Enter value of first variable: "))
+    b=int(input("Enter value of second variable: "))
+    a=a+b
+    b=a-b
+    a=a-b
+    print("a is:",a," b is:",b)
+    return a
   
 def avgNumber():
     n=int(input("Enter the number of elements to be inserted: "))
