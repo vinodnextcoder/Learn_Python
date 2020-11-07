@@ -25,3 +25,12 @@ total = 0
 total = math.pow((number * (number + 1)) /2, 2)
 
 print("The Sum of Series upto {0}  = {1}".format(number, total))
+
+
+# Python Program to Calculate Square of a Number
+
+number = float(input(" Please Enter any numeric Value : "))
+
+square = number * number
+
+print("The Square of a Given Number {0}  = {1}".format(number, square))
