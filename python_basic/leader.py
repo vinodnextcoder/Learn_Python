@@ -8,3 +8,14 @@ def printLeader(arr,size):
 
 arr=[16, 17, 4, 3, 5, 2]  
 printLeader(arr, len(arr))  
+
+## print leader
+def leader(arr,size):
+    maxRight=arr[size-1]
+    for i in range(size-2,-1,-1):
+          if maxRight <= arr[i]:         
+                print (arr[i]) 
+                max_from_right = arr[i] 
+
+arr=[16, 17, 4, 3, 5, 2]  
+leader(arr, len(arr))  
